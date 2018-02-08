@@ -276,10 +276,10 @@ def A_star_withtime(day,informap,city0,citynum):
     cv2.circle(informap,star['位置'],1,(0,255,0),-1)#起点
     cv2.circle(informap,end['位置'],1,(0,255,100),-1)#终点
     #io.imshow(informap)
-    cv2.imwrite("road/"+str(day)+str(citynum)+"informap.png",informap)
+    cv2.imwrite("road/"+str(day)+str(citynum+1)+"informap.png",informap)
     cv2.circle(windpic,star['位置'],1,255,-1)#起点
     cv2.circle(windpic,end['位置'],1,255,-1)#终点
-    cv2.imwrite("road/"+str(day)+str(citynum)+"informapshow.png",windpic)
+    cv2.imwrite("road/"+str(day)+str(citynum+1)+"informapshow.png",windpic)
     
     return minroad
 
